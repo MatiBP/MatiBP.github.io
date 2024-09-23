@@ -1,8 +1,8 @@
 ---
-title: Draft Example
-published: 2022-07-01
+title: ELF Injection
+published: 2024-07-01
 tags: [Markdown, Blogging, Demo]
-category: Examples
+category: Binary
 draft: true
 ---
 
