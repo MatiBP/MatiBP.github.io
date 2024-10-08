@@ -13,10 +13,28 @@ lang: ''
 The goal of this project was to bypass an extension who was create to block fingerprinting.
 :::
 
+- |
+ MatiBP - JH\
+  M1 Cybersécurité\
+date: 2024
+title: Trace
+---       
+
+
+___
+lalala
+___
+
+[^1]: Voici la note de bas de page.
+
+***
+lalala
+***
+
 ## Privacy project
 
 # Bypassing Trace extension
-
+    
 ---
 abstract: |
   We will present our research on the Trace extension and the method we
@@ -29,12 +47,6 @@ abstract: |
   attack. Because of our subject, we decided to enter our report in the
   form of a Latex with our code attached.
 author:
-- |
-  MatiBP - JH\
-  M1 Cybersécurité\
-date: 2024
-title: Trace
----
 
 ------------------------------------------------------------------------
 
@@ -142,7 +154,7 @@ without Trace the fingerprint can be stored in a database and has
 effectively allowed us to recognize different users of our site based on
 their unique fingerprint.\
 
-![our fingerprint interface](images/site.png){width="0.85\\linewidth"}
+![our fingerprint interface](images/site.png)
 
 To carry out our attack, we relied on websites that provide clear
 explanations and practical examples of similar attacks. This allowed us

@@ -52,7 +52,7 @@ export const profileConfig: ProfileConfig = {
   bio: 'Personal Blog.',
   links: [
     {
-      name: 'Twitter',
+      name: 'Linkedin',
       icon: 'fa6-brands:linkedin',       // Visit https://icones.js.org/ for icon codes
                                         // You will need to install the corresponding icon set if it's not already included
                                         // `pnpm add @iconify-json/<icon-set-name>`
@@ -62,6 +62,11 @@ export const profileConfig: ProfileConfig = {
       name: 'GitHub',
       icon: 'fa6-brands:github',
       url: 'https://github.com/MatiBP',
+    },
+    {
+      name: 'root-me',
+      icon: 'fa6-brands:root-me',
+      url: 'https://www.root-me.org/BigTi?lang=fr#91cb873924d02052212b9d38853445ae',
     },
   ],
 }
