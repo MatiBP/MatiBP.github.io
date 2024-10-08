@@ -1,0 +1,120 @@
+% Cyberschool style package for Reports for Cyberschool from University of Rennes 
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cyberschool}[2024/01/19 Package provided to create reports with the style and logos of University of Rennes and th Cyberschool. Created by Lucas Roquet.]
+
+% -- Needed packages
+\RequirePackage{graphicx}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+
+\RequirePackage{setspace}
+\onehalfspacing
+
+
+% -- Page format
+\RequirePackage{geometry}
+\geometry{
+	a4paper,
+	hcentering,
+	headsep=18pt,
+	footskip=36pt,
+	vcentering,
+	top=27mm,
+	bottom=35mm,
+    left=25mm,
+    right=25mm
+}
+
+
+
+% default font
+\renewcommand{\familydefault}{qpl} % default font
+
+% itemize label
+\RequirePackage{enumitem}
+\renewcommand{\labelitemi}{\textbullet} % default item for itemize
+\renewcommand{\labelitemii}{$\blacktriangleright$} % default item for itemize
+
+% -- Defined colors
+\RequirePackage{xcolor}
+\definecolor{Purple}{RGB}{ 156, 118, 253 }
+\definecolor{DarkerPurple}{RGB}{133, 100, 223}
+\definecolor{DarkerDarkerPurple}{RGB}{116, 77, 193}
+\definecolor{CyberBlue}{RGB}{ 52, 68, 163 }
+
+% -- New commands
+\newcommand{\class}[1]{\gdef\@class{#1}}
+\newcommand{\mail}[1]{\href{mailto:#1}{#1}}
+
+% -- New styles of titles
+% Page title
+\renewcommand{\maketitle}{%
+    \begin{center}
+    \par\noindent\rule[4mm]{\textwidth}{2pt} % top rule
+    \par\LARGE{\textbf{\@class}} % course name
+    \vspace*{.5em}
+    \par\LARGE{\textbf{\color{CyberBlue}\@title}} % document title
+    \vspace*{.5em}
+    \par\large{\@author} % authors
+    \vspace*{1em}
+    \par\@ifundefined{@date}%
+      {%
+        {\large \today}
+      }%
+      {%
+        {\large \@date}
+      }
+    \vspace*{.5em}
+    % logos
+    \par\includegraphics[scale=0.26]{logo/UNIRENNES_LOGOnoir.png}
+    \hfill
+    \includegraphics[scale=0.4]{logo/Logo_CyberSchool_3COUL_RVB.png}
+    \vspace*{1em}
+    \par\noindent\rule[4mm]{\textwidth}{2pt} % bottom rule
+    \end{center}
+    \thispagestyle{plain} % Suppress fancy header and footer on the first page
+}
+
+% Section styles (inspired from https://gitlab.com/Mwapl/teaching-template
+\RequirePackage{titlesec}
+\titleformat{name=\section}
+    {\Large\raggedright\bfseries\color{Purple}}
+    {\(\blacklozenge\)\;\thesection}
+    {.5em}{}
+\titleformat{name=\subsection}
+    {\large\raggedright\bfseries\color{DarkerPurple}}
+    {\(\blacksquare\)\;\thesubsection}
+    {.5em}{}
+\titleformat{name=\subsubsection}
+    {\raggedright\bfseries\color{DarkerDarkerPurple}}
+    {\(\blacktriangle\)\;\thesubsubsection}
+    {.5em}{}
+
+\titleformat{name=\section, numberless}
+    {\Large\raggedright\bfseries\color{Purple}}
+    {\(\blacklozenge\)}
+    {.5em}{}
+\titleformat{name=\subsection, numberless}
+    {\large\raggedright\bfseries\color{DarkerPurple}}
+    {\(\blacksquare\)}
+    {.5em}{}
+\titleformat{name=\subsubsection, numberless}
+    {\raggedright\bfseries\color{DarkerDarkerPurple}}
+    {\(\blacktriangle\)}
+    {.5em}{}
+
+% % Fancy page style
+\RequirePackage{fancyhdr}
+\fancypagestyle{plain}{%
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyhf{} % Clear existing header/footer settings
+    \fancyfoot[C]{\fancyplain{}{\thepage}} % Page number in the center of the footer
+} % No fancy header on page with title
+
+\fancyhf{} % Clear header/footer settings for subsequent pages
+\fancyfoot[C]{\fancyplain{}{\thepage}} % Page number in the center of the footer
+\renewcommand{\headrulewidth}{1pt}
+ \setlength{\headheight}{13.59999pt}
+ \addtolength{\topmargin}{-1.59999pt}
+\pagestyle{fancy}

@@ -3,8 +3,8 @@ title: Bypassing fingerprint protections
 published: 2024-09-24
 description: ''
 image: ''
-tags: []
-category: ''
+tags: [Privacy]
+category: 'Cyber'
 draft: false 
 lang: ''
 ---
@@ -14,22 +14,9 @@ The goal of this project was to bypass an extension who was create to block fing
 :::
 
 - |
- MatiBP - JH\
-  M1 Cybersécurité\
+MatiBP 
 date: 2024
-title: Trace
 ---       
-
-
-___
-lalala
-___
-
-[^1]: Voici la note de bas de page.
-
-***
-lalala
-***
 
 ## Privacy project
 
