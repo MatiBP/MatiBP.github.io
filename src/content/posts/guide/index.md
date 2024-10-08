@@ -5,7 +5,7 @@ description: "How to use this blog template."
 image: "./programming-background-concept.jpg"
 tags: ["Fuwari", "Blogging", "Customization"]
 category: Guides
-draft: false
+draft: true
 ---
 
 
