@@ -410,7 +410,7 @@ Results
 =======
 
 You can still find our code on this Gitlab project: 
-[GitHub - Bignum Project](https://github.com/MatiBP/Privacy-fingerprint-bypassing-Trace-protection)
+[GitHub - bypassing-Trace-protection](https://github.com/MatiBP/Privacy-fingerprint-bypassing-Trace-protection)
 
 
 To sum up the results we achieved, we are able to identify a user who
