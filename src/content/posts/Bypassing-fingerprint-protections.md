@@ -409,9 +409,9 @@ the Math.random function so that the added noise was null.
 Results
 =======
 
-You can still find our code on this Gitlab project: [GitHub of our
-project - Tag
-THE\_FINAL\_VERSION]()
+You can still find our code on this Gitlab project: 
+[GitHub - Bignum Project](https://github.com/MatiBP/Privacy-fingerprint-bypassing-Trace-protection)
+
 
 To sum up the results we achieved, we are able to identify a user who
 connects to our website from a particular browser and re-identify them
@@ -444,3 +444,4 @@ privacy against sophisticated tracking techniques. Despite Trace's
 intentions to safeguard user anonymity, our research demonstrates the
 resilience of fingerprinting methods and the importance of continuously
 evaluating and enhancing privacy protection measures.\
+
