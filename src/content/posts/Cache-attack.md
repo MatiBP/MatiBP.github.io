@@ -14,8 +14,6 @@ lang: ''
 Ce projet de recherche a été mené durant mon année de Master 1 (M1) avec une GRANDE collaboration de plusieurs collègues. J'ai choisi de respecter leur souhait de rester anonymes, mais en cas de besoin, je peux fournir les informations nécessaires sur leur contribution.
 
 
-------------------------------------------------------------------------
-
 1 - Introduction
 ============
 
