@@ -65,7 +65,7 @@ export const profileConfig: ProfileConfig = {
     },
     {
       name: 'root-me',
-      icon: 'fa6-brands:first-order',
+      icon: 'fa6-brands:github',
       url: 'https://www.root-me.org/BigTi?lang=fr#91cb873924d02052212b9d38853445ae',
     },
   ],
